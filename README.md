@@ -2,7 +2,7 @@
 
 # Candidate Finder
 
-Candidate Finder is a Python App for Finding the right candidator for a specific job.
+Candidate Finder is a Python App for Finding the right candidate for a specific job.
 
 ## Installation
 
