@@ -1,0 +1,123 @@
+[
+    {
+        "model": "candidator.Skill",
+        "pk": 1,
+        "fields": {
+            "title": "Python"
+        }
+    },
+    {
+        "model": "candidator.Skill",
+        "pk": 2,
+        "fields": {
+            "title": "PHP"
+        }
+    },
+    {
+        "model": "candidator.Skill",
+        "pk": 3,
+        "fields": {
+            "title": "HTML"
+        }
+    },
+    {
+        "model": "candidator.Skill",
+        "pk": 4,
+        "fields": {
+            "title": "Javascript"
+        }
+    },
+    {
+        "model": "candidator.Skill",
+        "pk": 5,
+        "fields": {
+            "title": "ESB"
+        }
+    },
+    {
+        "model": "candidator.Job",
+        "pk": 1,
+        "fields": {
+            "title": "Backend Developer",
+            "skill": 1
+        }
+    },
+    {
+        "model": "candidator.Job",
+        "pk": 2,
+        "fields": {
+            "title": "Frontend Engineer",
+            "skill": 4
+        }
+    },
+    {
+        "model": "candidator.Job",
+        "pk": 3,
+        "fields": {
+            "title": "Fullstack Engineer",
+            "skill": 3
+        }
+    },
+    {
+        "model": "candidator.Job",
+        "pk": 4,
+        "fields": {
+            "title": "Integration Professional",
+            "skill": 5
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 1,
+        "fields": {
+            "name": "Yotam Faraggi",
+            "title": "Backend Developer",
+            "skills": [1,2,3]
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 2,
+        "fields": {
+            "name": "Amir Cohen",
+            "title": "Fullstack Engineer",
+            "skills": [4]
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 3,
+        "fields": {
+            "name": "David Lev",
+            "title": "Backend Programmer",
+            "skills": [1]
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 4,
+        "fields": {
+            "name": "Adam Bialik",
+            "title": "Fullstack Developer",
+            "skills": [2,3]
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 5,
+        "fields": {
+            "name": "Mor Schwarts",
+            "title": "Fullstack Programmer",
+            "skills": [3]
+        }
+    },
+    {
+        "model": "candidator.Candidate",
+        "pk": 6,
+        "fields": {
+            "name": "Gil Miron",
+            "title": "Backend Engineer",
+            "skills": [1,2]
+        }
+    }
+]

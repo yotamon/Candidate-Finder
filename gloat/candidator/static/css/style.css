@@ -1,0 +1,46 @@
+/* Home Page */
+
+h1 {
+    margin: 50px !important;
+}
+
+.main-img {
+    height: 150px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Result Page */
+
+.card {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.lead {
+    margin: unset;
+}
+
+.candidate-img {
+    height: 50px;
+}
+
+.candidate-title {
+    font-size: 0.9rem;
+}
+
+.selectpicker {
+    margin: 20px;
+}
+
+.no-results-img {
+    margin-top: 50px;
+    height: 220px;
+}

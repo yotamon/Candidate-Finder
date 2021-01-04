@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{% block content %} 
+{% load static %}
+<img class="main-img" src="{% static 'images/main-img.png' %}" alt="">
+<h1 class="text-center mb-3">Find Candidates</h1>
+<form action="{% url 'candidator:results' %}" method="post">
+    {% csrf_token %}
+    <label for="select-job">I'm looking for a </label>
+    <select name="job" id="select-job" class="selectpicker">
+        {% if jobs_list %}
+            {% for job in jobs_list %}
+                <option value="{{job.id}}">{{job.title}}</option>
+            {% endfor %}
+        {% else %}
+            <option value="">No Available Jobs</option>
+        {% endif %}
+    </select>
+    <input type="submit" value="Search" class="btn btn-primary btn-sm">
+</form>
+{% endblock %}

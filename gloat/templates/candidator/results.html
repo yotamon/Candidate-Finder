@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<h1 class="text-center mb-3">Matched Candidates</h1>
+{% if candidates %}
+    <p>We have found some candidates for you, sorted by match strength:</p>
+    {% for candidate in candidates %}
+        <div class="card mb-3">
+            <img class="candidate-img" src="{% static 'images/candidate.png' %}" alt="">
+            <div class="card-body">
+                <p class="lead">{{candidate.name}}, 
+                    <span class="candidate-title">{{candidate.title}}</span>
+                    <div class="skills">
+                        {% for skill in candidate.skills.all %}
+                        <span class="badge badge-secondary">{{skill.title}}</span>
+                        {% endfor %}
+                    </div>
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <img class="no-results-img" src="{% static 'images/no-results.png' %}" alt="">
+{% endif %}
+
+{% endblock %}
