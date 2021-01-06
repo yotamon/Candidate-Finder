@@ -7,22 +7,32 @@ Candidate Finder is a Python App for Finding the right candidate for a specific 
 ## Installation
 
 1. Clone Git Repository To Your Local Environment
-2. Create Migrations -
+2. Install Python + Pipenv
     ```bash
-    python .\manage.py makemigrations candidator
+    pip install --user pipenv
     ```
-3. Migrate -
+3. Open App Environment Shell & Install Packages
     ```bash
-    python .\manage.py migrate
+    pipenv shell
+    pipenv install
     ```
-4. Initialize Data -
+4. Create Migrations -
     ```bash
-    python .\manage.py loaddata data.json
+    python gloat\manage.py makemigrations candidator
     ```
-5. Run The Server - 
+5. Migrate -
     ```bash
-    python .\manage.py runserver
+    python gloat\manage.py migrate
     ```
+6. Initialize Data -
+    ```bash
+    python gloat\manage.py loaddata data.json
+    ```
+7. Run The Server - 
+    ```bash
+    python gloat\manage.py runserver
+    ```
+8. Open Site URL - localhost:port/candidator
 
 ## Admin Panel: 
     * User: admin
