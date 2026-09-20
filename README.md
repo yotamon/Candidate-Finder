@@ -36,6 +36,12 @@ Candidate Finder is a Python App for Finding the right candidate for a specific 
     ```
 8. Open Site URL - localhost:port/candidator
 
-## Admin Panel: 
-    * User: admin
-    * Password: admin
+## Admin Panel
+
+Create a local administrator account instead of relying on shared demo credentials:
+
+```bash
+python gloat\\manage.py createsuperuser
+```
+
+Use the account you create to access the local admin panel.
