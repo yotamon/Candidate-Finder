@@ -1,3 +1,5 @@
+> **Legacy project (2021).** Kept as an early Python/Django exercise and not representative of my current production work. The documented `admin/admin` credentials below are local demo defaults only and must never be reused in a deployed environment. For current projects, see my [GitHub profile](https://github.com/yotamon) and [professional profile](https://cart-shift.com/en/yotam).
+
 <p align="center"><img src="https://github.com/yotamon/Candidate-Finder/blob/master/gloat/candidator/static/images/main-img.png" height="150"></p>
 
 # Candidate Finder
